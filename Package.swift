@@ -5,24 +5,19 @@ import PackageDescription
 
 let package = Package(
     name: "dogs-images-generator",
+    platforms: [
+        .macOS(.v12), .iOS(.v15)
+    ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "dogs-images-generator",
-            targets: ["dogs-images-generator"]),
-    ],
-    dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        // .package(url: /* package url */, from: "1.0.0"),
+            targets: ["dogs_images_generator"]),
     ],
     targets: [
-        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .target(
-            name: "dogs-images-generator",
-            dependencies: []),
-        .testTarget(
-            name: "dogs-images-generatorTests",
-            dependencies: ["dogs-images-generator"]),
+        .binaryTarget(
+            name: "dogs_images_generator",
+            path: "./Sources/dogs_images_generator.xcframework"
+        )
     ]
 )

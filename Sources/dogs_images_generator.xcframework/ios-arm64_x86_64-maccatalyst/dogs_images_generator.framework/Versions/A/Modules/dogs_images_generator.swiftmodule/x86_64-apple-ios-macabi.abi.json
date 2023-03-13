@@ -1,0 +1,2178 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "dogs_images_generator",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DogImages",
+        "printedName": "DogImages",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DogImages",
+                "printedName": "dogs_images_generator.DogImages",
+                "usr": "s:21dogs_images_generator9DogImagesV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:21dogs_images_generator9DogImagesV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s21dogs_images_generator9DogImagesV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "dogs_images_generator",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:21dogs_images_generator9DogImagesV",
+        "mangledName": "$s21dogs_images_generator9DogImagesV",
+        "moduleName": "dogs_images_generator",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DogsImagesService",
+        "printedName": "DogsImagesService",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "fetchDogImages",
+            "printedName": "fetchDogImages(number:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<dogs_images_generator.DogImages, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<dogs_images_generator.DogImages, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DogImages",
+                        "printedName": "dogs_images_generator.DogImages",
+                        "usr": "s:21dogs_images_generator9DogImagesV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21dogs_images_generator17DogsImagesServiceP08fetchDogE06number10completionySi_ys6ResultOyAA0hE0Vs5Error_pGctF",
+            "mangledName": "$s21dogs_images_generator17DogsImagesServiceP08fetchDogE06number10completionySi_ys6ResultOyAA0hE0Vs5Error_pGctF",
+            "moduleName": "dogs_images_generator",
+            "genericSig": "<τ_0_0 where τ_0_0 : dogs_images_generator.DogsImagesService>",
+            "sugared_genericSig": "<Self where Self : dogs_images_generator.DogsImagesService>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:21dogs_images_generator17DogsImagesServiceP",
+        "mangledName": "$s21dogs_images_generator17DogsImagesServiceP",
+        "moduleName": "dogs_images_generator",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "APIManager",
+        "printedName": "APIManager",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "APIManager",
+                "printedName": "dogs_images_generator.APIManager",
+                "usr": "s:21dogs_images_generator10APIManagerC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:21dogs_images_generator10APIManagerCACycfc",
+            "mangledName": "$s21dogs_images_generator10APIManagerCACycfc",
+            "moduleName": "dogs_images_generator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchDogImages",
+            "printedName": "fetchDogImages(number:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<dogs_images_generator.DogImages, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<dogs_images_generator.DogImages, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DogImages",
+                        "printedName": "dogs_images_generator.DogImages",
+                        "usr": "s:21dogs_images_generator9DogImagesV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21dogs_images_generator10APIManagerC14fetchDogImages6number10completionySi_ys6ResultOyAA0fG0Vs5Error_pGctF",
+            "mangledName": "$s21dogs_images_generator10APIManagerC14fetchDogImages6number10completionySi_ys6ResultOyAA0fG0Vs5Error_pGctF",
+            "moduleName": "dogs_images_generator",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:21dogs_images_generator10APIManagerC",
+        "mangledName": "$s21dogs_images_generator10APIManagerC",
+        "moduleName": "dogs_images_generator",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "DogsImagesService",
+            "printedName": "DogsImagesService",
+            "usr": "s:21dogs_images_generator17DogsImagesServiceP",
+            "mangledName": "$s21dogs_images_generator17DogsImagesServiceP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "dogs_images_generator",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "dogs_images_generator"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ImageCacheType",
+        "printedName": "ImageCacheType",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "image",
+            "printedName": "image(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21dogs_images_generator14ImageCacheTypeP5image3forSo7UIImageCSg10Foundation3URLV_tF",
+            "mangledName": "$s21dogs_images_generator14ImageCacheTypeP5image3forSo7UIImageCSg10Foundation3URLV_tF",
+            "moduleName": "dogs_images_generator",
+            "genericSig": "<τ_0_0 where τ_0_0 : dogs_images_generator.ImageCacheType>",
+            "sugared_genericSig": "<Self where Self : dogs_images_generator.ImageCacheType>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "insertImage",
+            "printedName": "insertImage(_:for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21dogs_images_generator14ImageCacheTypeP06insertD0_3forySo7UIImageCSg_10Foundation3URLVtF",
+            "mangledName": "$s21dogs_images_generator14ImageCacheTypeP06insertD0_3forySo7UIImageCSg_10Foundation3URLVtF",
+            "moduleName": "dogs_images_generator",
+            "genericSig": "<τ_0_0 where τ_0_0 : dogs_images_generator.ImageCacheType>",
+            "sugared_genericSig": "<Self where Self : dogs_images_generator.ImageCacheType>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeImage",
+            "printedName": "removeImage(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21dogs_images_generator14ImageCacheTypeP06removeD03fory10Foundation3URLV_tF",
+            "mangledName": "$s21dogs_images_generator14ImageCacheTypeP06removeD03fory10Foundation3URLV_tF",
+            "moduleName": "dogs_images_generator",
+            "genericSig": "<τ_0_0 where τ_0_0 : dogs_images_generator.ImageCacheType>",
+            "sugared_genericSig": "<Self where Self : dogs_images_generator.ImageCacheType>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeAllImages",
+            "printedName": "removeAllImages()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21dogs_images_generator14ImageCacheTypeP15removeAllImagesyyF",
+            "mangledName": "$s21dogs_images_generator14ImageCacheTypeP15removeAllImagesyyF",
+            "moduleName": "dogs_images_generator",
+            "genericSig": "<τ_0_0 where τ_0_0 : dogs_images_generator.ImageCacheType>",
+            "sugared_genericSig": "<Self where Self : dogs_images_generator.ImageCacheType>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Subscript",
+            "name": "subscript",
+            "printedName": "subscript(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Subscript",
+            "usr": "s:21dogs_images_generator14ImageCacheTypePySo7UIImageCSg10Foundation3URLVcip",
+            "mangledName": "$s21dogs_images_generator14ImageCacheTypePySo7UIImageCSg10Foundation3URLVcip",
+            "moduleName": "dogs_images_generator",
+            "genericSig": "<τ_0_0 where τ_0_0 : dogs_images_generator.ImageCacheType>",
+            "sugared_genericSig": "<Self where Self : dogs_images_generator.ImageCacheType>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21dogs_images_generator14ImageCacheTypePySo7UIImageCSg10Foundation3URLVcig",
+                "mangledName": "$s21dogs_images_generator14ImageCacheTypePySo7UIImageCSg10Foundation3URLVcig",
+                "moduleName": "dogs_images_generator",
+                "genericSig": "<τ_0_0 where τ_0_0 : dogs_images_generator.ImageCacheType>",
+                "sugared_genericSig": "<Self where Self : dogs_images_generator.ImageCacheType>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21dogs_images_generator14ImageCacheTypePySo7UIImageCSg10Foundation3URLVcis",
+                "mangledName": "$s21dogs_images_generator14ImageCacheTypePySo7UIImageCSg10Foundation3URLVcis",
+                "moduleName": "dogs_images_generator",
+                "genericSig": "<τ_0_0 where τ_0_0 : dogs_images_generator.ImageCacheType>",
+                "sugared_genericSig": "<Self where Self : dogs_images_generator.ImageCacheType>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21dogs_images_generator14ImageCacheTypePySo7UIImageCSg10Foundation3URLVciM",
+                "mangledName": "$s21dogs_images_generator14ImageCacheTypePySo7UIImageCSg10Foundation3URLVciM",
+                "moduleName": "dogs_images_generator",
+                "genericSig": "<τ_0_0 where τ_0_0 : dogs_images_generator.ImageCacheType>",
+                "sugared_genericSig": "<Self where Self : dogs_images_generator.ImageCacheType>",
+                "protocolReq": true,
+                "implicit": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:21dogs_images_generator14ImageCacheTypeP",
+        "mangledName": "$s21dogs_images_generator14ImageCacheTypeP",
+        "moduleName": "dogs_images_generator",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ImageCache",
+        "printedName": "ImageCache",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "Config",
+            "printedName": "Config",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "countLimit",
+                "printedName": "countLimit",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:21dogs_images_generator10ImageCacheC6ConfigV10countLimitSivp",
+                "mangledName": "$s21dogs_images_generator10ImageCacheC6ConfigV10countLimitSivp",
+                "moduleName": "dogs_images_generator",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:21dogs_images_generator10ImageCacheC6ConfigV10countLimitSivg",
+                    "mangledName": "$s21dogs_images_generator10ImageCacheC6ConfigV10countLimitSivg",
+                    "moduleName": "dogs_images_generator",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "memoryLimit",
+                "printedName": "memoryLimit",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:21dogs_images_generator10ImageCacheC6ConfigV11memoryLimitSivp",
+                "mangledName": "$s21dogs_images_generator10ImageCacheC6ConfigV11memoryLimitSivp",
+                "moduleName": "dogs_images_generator",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:21dogs_images_generator10ImageCacheC6ConfigV11memoryLimitSivg",
+                    "mangledName": "$s21dogs_images_generator10ImageCacheC6ConfigV11memoryLimitSivg",
+                    "moduleName": "dogs_images_generator",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "defaultConfig",
+                "printedName": "defaultConfig",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Config",
+                    "printedName": "dogs_images_generator.ImageCache.Config",
+                    "usr": "s:21dogs_images_generator10ImageCacheC6ConfigV"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:21dogs_images_generator10ImageCacheC6ConfigV07defaultF0AEvpZ",
+                "mangledName": "$s21dogs_images_generator10ImageCacheC6ConfigV07defaultF0AEvpZ",
+                "moduleName": "dogs_images_generator",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Config",
+                        "printedName": "dogs_images_generator.ImageCache.Config",
+                        "usr": "s:21dogs_images_generator10ImageCacheC6ConfigV"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:21dogs_images_generator10ImageCacheC6ConfigV07defaultF0AEvgZ",
+                    "mangledName": "$s21dogs_images_generator10ImageCacheC6ConfigV07defaultF0AEvgZ",
+                    "moduleName": "dogs_images_generator",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:21dogs_images_generator10ImageCacheC6ConfigV",
+            "mangledName": "$s21dogs_images_generator10ImageCacheC6ConfigV",
+            "moduleName": "dogs_images_generator",
+            "declAttributes": [
+              "AccessControl"
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(config:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImageCache",
+                "printedName": "dogs_images_generator.ImageCache",
+                "usr": "s:21dogs_images_generator10ImageCacheC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Config",
+                "printedName": "dogs_images_generator.ImageCache.Config",
+                "hasDefaultArg": true,
+                "usr": "s:21dogs_images_generator10ImageCacheC6ConfigV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:21dogs_images_generator10ImageCacheC6configA2C6ConfigV_tcfc",
+            "mangledName": "$s21dogs_images_generator10ImageCacheC6configA2C6ConfigV_tcfc",
+            "moduleName": "dogs_images_generator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "image",
+            "printedName": "image(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21dogs_images_generator10ImageCacheC5image3forSo7UIImageCSg10Foundation3URLV_tF",
+            "mangledName": "$s21dogs_images_generator10ImageCacheC5image3forSo7UIImageCSg10Foundation3URLV_tF",
+            "moduleName": "dogs_images_generator",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "insertImage",
+            "printedName": "insertImage(_:for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21dogs_images_generator10ImageCacheC06insertD0_3forySo7UIImageCSg_10Foundation3URLVtF",
+            "mangledName": "$s21dogs_images_generator10ImageCacheC06insertD0_3forySo7UIImageCSg_10Foundation3URLVtF",
+            "moduleName": "dogs_images_generator",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeImage",
+            "printedName": "removeImage(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21dogs_images_generator10ImageCacheC06removeD03fory10Foundation3URLV_tF",
+            "mangledName": "$s21dogs_images_generator10ImageCacheC06removeD03fory10Foundation3URLV_tF",
+            "moduleName": "dogs_images_generator",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeAllImages",
+            "printedName": "removeAllImages()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21dogs_images_generator10ImageCacheC15removeAllImagesyyF",
+            "mangledName": "$s21dogs_images_generator10ImageCacheC15removeAllImagesyyF",
+            "moduleName": "dogs_images_generator",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Subscript",
+            "name": "subscript",
+            "printedName": "subscript(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Subscript",
+            "usr": "s:21dogs_images_generator10ImageCacheCySo7UIImageCSg10Foundation3URLVcip",
+            "mangledName": "$s21dogs_images_generator10ImageCacheCySo7UIImageCSg10Foundation3URLVcip",
+            "moduleName": "dogs_images_generator",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21dogs_images_generator10ImageCacheCySo7UIImageCSg10Foundation3URLVcig",
+                "mangledName": "$s21dogs_images_generator10ImageCacheCySo7UIImageCSg10Foundation3URLVcig",
+                "moduleName": "dogs_images_generator",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21dogs_images_generator10ImageCacheCySo7UIImageCSg10Foundation3URLVcis",
+                "mangledName": "$s21dogs_images_generator10ImageCacheCySo7UIImageCSg10Foundation3URLVcis",
+                "moduleName": "dogs_images_generator",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21dogs_images_generator10ImageCacheCySo7UIImageCSg10Foundation3URLVciM",
+                "mangledName": "$s21dogs_images_generator10ImageCacheCySo7UIImageCSg10Foundation3URLVciM",
+                "moduleName": "dogs_images_generator",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:21dogs_images_generator10ImageCacheC",
+        "mangledName": "$s21dogs_images_generator10ImageCacheC",
+        "moduleName": "dogs_images_generator",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ImageCacheType",
+            "printedName": "ImageCacheType",
+            "usr": "s:21dogs_images_generator14ImageCacheTypeP",
+            "mangledName": "$s21dogs_images_generator14ImageCacheTypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "dogs_images_generator",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "dogs_images_generator"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ImageGenerator",
+        "printedName": "ImageGenerator",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "getImage",
+            "printedName": "getImage(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<UIKit.UIImage, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<UIKit.UIImage, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21dogs_images_generator14ImageGeneratorP03getD010completionyys6ResultOySo7UIImageCs5Error_pGc_tF",
+            "mangledName": "$s21dogs_images_generator14ImageGeneratorP03getD010completionyys6ResultOySo7UIImageCs5Error_pGc_tF",
+            "moduleName": "dogs_images_generator",
+            "genericSig": "<τ_0_0 where τ_0_0 : dogs_images_generator.ImageGenerator>",
+            "sugared_genericSig": "<Self where Self : dogs_images_generator.ImageGenerator>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getImages",
+            "printedName": "getImages(number:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<[Swift.String], Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<[Swift.String], Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21dogs_images_generator14ImageGeneratorP9getImages6number10completionySi_ys6ResultOySaySSGs5Error_pGctF",
+            "mangledName": "$s21dogs_images_generator14ImageGeneratorP9getImages6number10completionySi_ys6ResultOySaySSGs5Error_pGctF",
+            "moduleName": "dogs_images_generator",
+            "genericSig": "<τ_0_0 where τ_0_0 : dogs_images_generator.ImageGenerator>",
+            "sugared_genericSig": "<Self where Self : dogs_images_generator.ImageGenerator>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getNextImage",
+            "printedName": "getNextImage(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<UIKit.UIImage, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<UIKit.UIImage, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21dogs_images_generator14ImageGeneratorP07getNextD010completionyys6ResultOySo7UIImageCs5Error_pGc_tF",
+            "mangledName": "$s21dogs_images_generator14ImageGeneratorP07getNextD010completionyys6ResultOySo7UIImageCs5Error_pGc_tF",
+            "moduleName": "dogs_images_generator",
+            "genericSig": "<τ_0_0 where τ_0_0 : dogs_images_generator.ImageGenerator>",
+            "sugared_genericSig": "<Self where Self : dogs_images_generator.ImageGenerator>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getPreviousImage",
+            "printedName": "getPreviousImage(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<UIKit.UIImage, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<UIKit.UIImage, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21dogs_images_generator14ImageGeneratorP011getPreviousD010completionyys6ResultOySo7UIImageCs5Error_pGc_tF",
+            "mangledName": "$s21dogs_images_generator14ImageGeneratorP011getPreviousD010completionyys6ResultOySo7UIImageCs5Error_pGc_tF",
+            "moduleName": "dogs_images_generator",
+            "genericSig": "<τ_0_0 where τ_0_0 : dogs_images_generator.ImageGenerator>",
+            "sugared_genericSig": "<Self where Self : dogs_images_generator.ImageGenerator>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:21dogs_images_generator14ImageGeneratorP",
+        "mangledName": "$s21dogs_images_generator14ImageGeneratorP",
+        "moduleName": "dogs_images_generator",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ImageLoadingError",
+        "printedName": "ImageLoadingError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "outOfRange",
+            "printedName": "outOfRange",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(dogs_images_generator.ImageLoadingError.Type) -> dogs_images_generator.ImageLoadingError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImageLoadingError",
+                    "printedName": "dogs_images_generator.ImageLoadingError",
+                    "usr": "s:21dogs_images_generator17ImageLoadingErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "dogs_images_generator.ImageLoadingError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ImageLoadingError",
+                        "printedName": "dogs_images_generator.ImageLoadingError",
+                        "usr": "s:21dogs_images_generator17ImageLoadingErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21dogs_images_generator17ImageLoadingErrorO10outOfRangeyA2CmF",
+            "mangledName": "$s21dogs_images_generator17ImageLoadingErrorO10outOfRangeyA2CmF",
+            "moduleName": "dogs_images_generator"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImageLoadingError",
+                "printedName": "dogs_images_generator.ImageLoadingError",
+                "usr": "s:21dogs_images_generator17ImageLoadingErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImageLoadingError",
+                "printedName": "dogs_images_generator.ImageLoadingError",
+                "usr": "s:21dogs_images_generator17ImageLoadingErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21dogs_images_generator17ImageLoadingErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s21dogs_images_generator17ImageLoadingErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "dogs_images_generator",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21dogs_images_generator17ImageLoadingErrorO9hashValueSivp",
+            "mangledName": "$s21dogs_images_generator17ImageLoadingErrorO9hashValueSivp",
+            "moduleName": "dogs_images_generator",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21dogs_images_generator17ImageLoadingErrorO9hashValueSivg",
+                "mangledName": "$s21dogs_images_generator17ImageLoadingErrorO9hashValueSivg",
+                "moduleName": "dogs_images_generator",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21dogs_images_generator17ImageLoadingErrorO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s21dogs_images_generator17ImageLoadingErrorO4hash4intoys6HasherVz_tF",
+            "moduleName": "dogs_images_generator",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:21dogs_images_generator17ImageLoadingErrorO",
+        "mangledName": "$s21dogs_images_generator17ImageLoadingErrorO",
+        "moduleName": "dogs_images_generator",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DogsImagesGenerator",
+        "printedName": "DogsImagesGenerator",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "imageURLs",
+            "printedName": "imageURLs",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21dogs_images_generator19DogsImagesGeneratorC9imageURLsSaySSGvp",
+            "mangledName": "$s21dogs_images_generator19DogsImagesGeneratorC9imageURLsSaySSGvp",
+            "moduleName": "dogs_images_generator",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21dogs_images_generator19DogsImagesGeneratorC9imageURLsSaySSGvg",
+                "mangledName": "$s21dogs_images_generator19DogsImagesGeneratorC9imageURLsSaySSGvg",
+                "moduleName": "dogs_images_generator",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "currentIndex",
+            "printedName": "currentIndex",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21dogs_images_generator19DogsImagesGeneratorC12currentIndexSivp",
+            "mangledName": "$s21dogs_images_generator19DogsImagesGeneratorC12currentIndexSivp",
+            "moduleName": "dogs_images_generator",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21dogs_images_generator19DogsImagesGeneratorC12currentIndexSivg",
+                "mangledName": "$s21dogs_images_generator19DogsImagesGeneratorC12currentIndexSivg",
+                "moduleName": "dogs_images_generator",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(dogService:imageLoader:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DogsImagesGenerator",
+                "printedName": "dogs_images_generator.DogsImagesGenerator",
+                "usr": "s:21dogs_images_generator19DogsImagesGeneratorC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DogsImagesService",
+                "printedName": "dogs_images_generator.DogsImagesService",
+                "hasDefaultArg": true,
+                "usr": "s:21dogs_images_generator17DogsImagesServiceP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImageLoadable",
+                "printedName": "dogs_images_generator.ImageLoadable",
+                "hasDefaultArg": true,
+                "usr": "s:21dogs_images_generator13ImageLoadableP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:21dogs_images_generator19DogsImagesGeneratorC10dogService11imageLoaderAcA0deH0_p_AA13ImageLoadable_ptcfc",
+            "mangledName": "$s21dogs_images_generator19DogsImagesGeneratorC10dogService11imageLoaderAcA0deH0_p_AA13ImageLoadable_ptcfc",
+            "moduleName": "dogs_images_generator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "getImage",
+            "printedName": "getImage(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<UIKit.UIImage, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<UIKit.UIImage, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21dogs_images_generator19DogsImagesGeneratorC8getImage10completionyys6ResultOySo7UIImageCs5Error_pGc_tF",
+            "mangledName": "$s21dogs_images_generator19DogsImagesGeneratorC8getImage10completionyys6ResultOySo7UIImageCs5Error_pGc_tF",
+            "moduleName": "dogs_images_generator",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getImages",
+            "printedName": "getImages(number:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<[Swift.String], Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<[Swift.String], Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21dogs_images_generator19DogsImagesGeneratorC03getE06number10completionySi_ys6ResultOySaySSGs5Error_pGctF",
+            "mangledName": "$s21dogs_images_generator19DogsImagesGeneratorC03getE06number10completionySi_ys6ResultOySaySSGs5Error_pGctF",
+            "moduleName": "dogs_images_generator",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getNextImage",
+            "printedName": "getNextImage(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<UIKit.UIImage, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<UIKit.UIImage, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21dogs_images_generator19DogsImagesGeneratorC12getNextImage10completionyys6ResultOySo7UIImageCs5Error_pGc_tF",
+            "mangledName": "$s21dogs_images_generator19DogsImagesGeneratorC12getNextImage10completionyys6ResultOySo7UIImageCs5Error_pGc_tF",
+            "moduleName": "dogs_images_generator",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getPreviousImage",
+            "printedName": "getPreviousImage(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<UIKit.UIImage, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<UIKit.UIImage, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21dogs_images_generator19DogsImagesGeneratorC16getPreviousImage10completionyys6ResultOySo7UIImageCs5Error_pGc_tF",
+            "mangledName": "$s21dogs_images_generator19DogsImagesGeneratorC16getPreviousImage10completionyys6ResultOySo7UIImageCs5Error_pGc_tF",
+            "moduleName": "dogs_images_generator",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:21dogs_images_generator19DogsImagesGeneratorC",
+        "mangledName": "$s21dogs_images_generator19DogsImagesGeneratorC",
+        "moduleName": "dogs_images_generator",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ImageGenerator",
+            "printedName": "ImageGenerator",
+            "usr": "s:21dogs_images_generator14ImageGeneratorP",
+            "mangledName": "$s21dogs_images_generator14ImageGeneratorP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "dogs_images_generator",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "dogs_images_generator"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "dogs_images_generator"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ImageLoadable",
+        "printedName": "ImageLoadable",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "loadImage",
+            "printedName": "loadImage(from:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<UIKit.UIImage, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<UIKit.UIImage, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21dogs_images_generator13ImageLoadableP04loadD04from10completiony10Foundation3URLV_ys6ResultOySo7UIImageCs5Error_pGctF",
+            "mangledName": "$s21dogs_images_generator13ImageLoadableP04loadD04from10completiony10Foundation3URLV_ys6ResultOySo7UIImageCs5Error_pGctF",
+            "moduleName": "dogs_images_generator",
+            "genericSig": "<τ_0_0 where τ_0_0 : dogs_images_generator.ImageLoadable>",
+            "sugared_genericSig": "<Self where Self : dogs_images_generator.ImageLoadable>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:21dogs_images_generator13ImageLoadableP",
+        "mangledName": "$s21dogs_images_generator13ImageLoadableP",
+        "moduleName": "dogs_images_generator",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ImageLoader",
+        "printedName": "ImageLoader",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImageLoader",
+                "printedName": "dogs_images_generator.ImageLoader",
+                "usr": "s:21dogs_images_generator11ImageLoaderC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21dogs_images_generator11ImageLoaderC6sharedACvpZ",
+            "mangledName": "$s21dogs_images_generator11ImageLoaderC6sharedACvpZ",
+            "moduleName": "dogs_images_generator",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImageLoader",
+                    "printedName": "dogs_images_generator.ImageLoader",
+                    "usr": "s:21dogs_images_generator11ImageLoaderC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21dogs_images_generator11ImageLoaderC6sharedACvgZ",
+                "mangledName": "$s21dogs_images_generator11ImageLoaderC6sharedACvgZ",
+                "moduleName": "dogs_images_generator",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(cache:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImageLoader",
+                "printedName": "dogs_images_generator.ImageLoader",
+                "usr": "s:21dogs_images_generator11ImageLoaderC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImageCacheType",
+                "printedName": "dogs_images_generator.ImageCacheType",
+                "hasDefaultArg": true,
+                "usr": "s:21dogs_images_generator14ImageCacheTypeP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:21dogs_images_generator11ImageLoaderC5cacheAcA0D9CacheType_p_tcfc",
+            "mangledName": "$s21dogs_images_generator11ImageLoaderC5cacheAcA0D9CacheType_p_tcfc",
+            "moduleName": "dogs_images_generator",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "loadImage",
+            "printedName": "loadImage(from:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<UIKit.UIImage, Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<UIKit.UIImage, Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21dogs_images_generator11ImageLoaderC04loadD04from10completiony10Foundation3URLV_ys6ResultOySo7UIImageCs5Error_pGctF",
+            "mangledName": "$s21dogs_images_generator11ImageLoaderC04loadD04from10completiony10Foundation3URLV_ys6ResultOySo7UIImageCs5Error_pGctF",
+            "moduleName": "dogs_images_generator",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:21dogs_images_generator11ImageLoaderC",
+        "mangledName": "$s21dogs_images_generator11ImageLoaderC",
+        "moduleName": "dogs_images_generator",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ImageLoadable",
+            "printedName": "ImageLoadable",
+            "usr": "s:21dogs_images_generator13ImageLoadableP",
+            "mangledName": "$s21dogs_images_generator13ImageLoadableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/nikolay.dutskinov\/Desktop\/Work projects\/Personal projects\/dogs-images-generator\/dogs-images-generator\/DogImagesGenerator\/ImageCache.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1463,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/nikolay.dutskinov\/Desktop\/Work projects\/Personal projects\/dogs-images-generator\/dogs-images-generator\/DogImagesGenerator\/ImageCache.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1481,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/nikolay.dutskinov\/Desktop\/Work projects\/Personal projects\/dogs-images-generator\/dogs-images-generator\/DogImagesGenerator\/ImageCache.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1488,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/nikolay.dutskinov\/Desktop\/Work projects\/Personal projects\/dogs-images-generator\/dogs-images-generator\/DogImagesGenerator\/ImageCache.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1495,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/nikolay.dutskinov\/Desktop\/Work projects\/Personal projects\/dogs-images-generator\/dogs-images-generator\/DogImagesGenerator\/DogsImagesGenerator.swift",
+      "kind": "Array",
+      "offset": 1046,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/nikolay.dutskinov\/Desktop\/Work projects\/Personal projects\/dogs-images-generator\/dogs-images-generator\/DogImagesGenerator\/DogsImagesGenerator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1097,
+      "length": 1,
+      "value": "0"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+framework module dogs_images_generator {
+  umbrella header "dogs_images_generator.h"
+
+  export *
+  module * { export * }
+}
+
+module dogs_images_generator.Swift {
+  header "dogs_images_generator-Swift.h"
+  requires objc
+}

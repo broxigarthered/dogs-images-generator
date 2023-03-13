@@ -1,0 +1,87 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target x86_64-apple-ios16.2-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name dogs_images_generator
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Combine
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+@_exported import dogs_images_generator
+public struct DogImages : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+public protocol DogsImagesService {
+  func fetchDogImages(number: Swift.Int, completion: @escaping (Swift.Result<dogs_images_generator.DogImages, Swift.Error>) -> Swift.Void)
+}
+final public class APIManager : dogs_images_generator.DogsImagesService {
+  public init()
+  final public func fetchDogImages(number: Swift.Int, completion: @escaping (Swift.Result<dogs_images_generator.DogImages, Swift.Error>) -> Swift.Void)
+  @objc deinit
+}
+public protocol ImageCacheType : AnyObject {
+  func image(for url: Foundation.URL) -> UIKit.UIImage?
+  func insertImage(_ image: UIKit.UIImage?, for url: Foundation.URL)
+  func removeImage(for url: Foundation.URL)
+  func removeAllImages()
+  subscript(url: Foundation.URL) -> UIKit.UIImage? { get set }
+}
+final public class ImageCache : dogs_images_generator.ImageCacheType {
+  public struct Config {
+    public let countLimit: Swift.Int
+    public let memoryLimit: Swift.Int
+    public static let defaultConfig: dogs_images_generator.ImageCache.Config
+  }
+  public init(config: dogs_images_generator.ImageCache.Config = Config.defaultConfig)
+  final public func image(for url: Foundation.URL) -> UIKit.UIImage?
+  final public func insertImage(_ image: UIKit.UIImage?, for url: Foundation.URL)
+  final public func removeImage(for url: Foundation.URL)
+  final public func removeAllImages()
+  final public subscript(key: Foundation.URL) -> UIKit.UIImage? {
+    get
+    set
+  }
+  @objc deinit
+}
+public protocol ImageGenerator {
+  func getImage(completion: @escaping (Swift.Result<UIKit.UIImage, Swift.Error>) -> Swift.Void)
+  func getImages(number: Swift.Int, completion: @escaping (Swift.Result<[Swift.String], Swift.Error>) -> Swift.Void)
+  func getNextImage(completion: @escaping (Swift.Result<UIKit.UIImage, Swift.Error>) -> Swift.Void)
+  func getPreviousImage(completion: @escaping (Swift.Result<UIKit.UIImage, Swift.Error>) -> Swift.Void)
+}
+public enum ImageLoadingError : Swift.Error {
+  case outOfRange
+  public static func == (a: dogs_images_generator.ImageLoadingError, b: dogs_images_generator.ImageLoadingError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+final public class DogsImagesGenerator {
+  final public var imageURLs: [Swift.String] {
+    get
+  }
+  final public var currentIndex: Swift.Int {
+    get
+  }
+  public init(dogService: dogs_images_generator.DogsImagesService = APIManager(), imageLoader: dogs_images_generator.ImageLoadable = ImageLoader())
+  @objc deinit
+}
+extension dogs_images_generator.DogsImagesGenerator : dogs_images_generator.ImageGenerator {
+  final public func getImage(completion: @escaping (Swift.Result<UIKit.UIImage, Swift.Error>) -> Swift.Void)
+  final public func getImages(number: Swift.Int, completion: @escaping (Swift.Result<[Swift.String], Swift.Error>) -> Swift.Void)
+  final public func getNextImage(completion: @escaping (Swift.Result<UIKit.UIImage, Swift.Error>) -> Swift.Void)
+  final public func getPreviousImage(completion: @escaping (Swift.Result<UIKit.UIImage, Swift.Error>) -> Swift.Void)
+}
+public protocol ImageLoadable {
+  func loadImage(from url: Foundation.URL, completion: @escaping (Swift.Result<UIKit.UIImage, Swift.Error>) -> Swift.Void)
+}
+final public class ImageLoader : dogs_images_generator.ImageLoadable {
+  public static let shared: dogs_images_generator.ImageLoader
+  public init(cache: dogs_images_generator.ImageCacheType = ImageCache())
+  final public func loadImage(from url: Foundation.URL, completion: @escaping (Swift.Result<UIKit.UIImage, Swift.Error>) -> Swift.Void)
+  @objc deinit
+}
+extension dogs_images_generator.ImageLoadingError : Swift.Equatable {}
+extension dogs_images_generator.ImageLoadingError : Swift.Hashable {}
