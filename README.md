@@ -64,4 +64,4 @@ public protocol ImageGenerator {
 1. Upon loading an image it's being cached in the memory so memory consumtion is reduced.
 2. You can find the API used here - https://dog.ceo/dog-api/documentation/random
 
-Latest version: 0.0.3
+Latest version: 0.0.2
